@@ -9,6 +9,9 @@ import { QuestionState, Difficulty } from './API';
 
 import { GlobalStyle, Wrapper } from './App.styles';
 
+// Import Firebase
+import firebase from './firebase';
+
 export type AnswerObject = {
   question: string;
   answer: string;
@@ -20,6 +23,13 @@ export type AnswerObject = {
 const TOTAL_QUESTIONS = 10;
 
 const App = () => {
+
+  const messaging = firebase.messaging();
+  messaging.requestPermission().then( () => {
+    return messaging.getToken()
+  }).then((token)=> {
+    console.log('Token', token)
+  });
 
   const [loading, setLoading] = useState(false);
   const [questions, setQuestions] = useState<QuestionState[]>([]);
