@@ -6,6 +6,7 @@ let cacheFiles = [
   "/static/js/1.chunk.js",
   "/static/js/main.chunk.js",
   "/logo192.png",
+  "/favicon.ico",
   "/",
   "/index.html",
   "https://opentdb.com/api.php?amount=5&category=18&difficulty=easy&type=multiple"
