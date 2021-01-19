@@ -1,12 +1,10 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import Image from './images/bg.jpg';
 
 export const GlobalStyle = createGlobalStyle`
     html { 
         height: 100%;
     }
     body {
-        backgroud: url(${Image});
         background: #8D8741;
         background-size: cover;
         margin: 0;
