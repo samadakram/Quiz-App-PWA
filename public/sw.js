@@ -3,13 +3,13 @@ let version = "v1";
 //Cache Files
 let cacheFiles = [
   "/static/js/bundle.js",
-  "/static/js/1.chunk.js",
+  "/static/js/0.chunk.js",
   "/static/js/main.chunk.js",
   "/logo192.png",
   "/favicon.ico",
   "/",
   "/index.html",
-  "https://opentdb.com/api.php?amount=5&category=18&difficulty=easy&type=multiple"
+  "https://opentdb.com/api.php?amount=${amount}&difficulty=${difficulty}&type=multiple"
 ];
 
 // Install Service Woker
